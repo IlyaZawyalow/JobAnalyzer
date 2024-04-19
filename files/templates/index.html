@@ -72,8 +72,9 @@
         xhr.open('GET', '/get_data_count', true);
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4 && xhr.status === 200) {
-                var dataCount = xhr.responseText;
-                document.getElementById('data_count').innerText = dataCount;
+                var response = JSON.parse(xhr.responseText);  // Преобразуем ответ в объект JSON
+                var dataCount = response.data_count;  // Извлекаем значение data_count из объекта
+                document.getElementById('data_count').innerText = dataCount;  // Обновляем значение на странице
                 checkChartData();
             }
         };
