@@ -5,7 +5,7 @@ import queue
 import json
 from typing import Dict, List, Set, Any, Union
 import requests
-from files.dataBase import DataBase
+from dataBase import DataBase
 
 ID_ROLES_LIST = ['118', '114', '164', '126', '112', '10', '25', '38', '171', '84', '104', '172', '96', '166', '125',
                  '170', '87', '116', '55', '86', '113', '107', '48', '160', '1', '165', '12', '121', '36', '69', '124',
