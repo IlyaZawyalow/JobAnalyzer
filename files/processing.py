@@ -1,6 +1,6 @@
 from sqlalchemy import create_engine
 import pandas as pd
-from files.dataBase import DataBase
+from dataBase import DataBase
 import os
 from loguru import logger
 from typing import Union
